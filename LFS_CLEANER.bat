@@ -46,7 +46,7 @@ del /f /s /q "C:\Windows\Prefetch\*.*" >nul 2>&1
 echo.
 echo.                                            TEMP folders successfully cleaned!
 echo.
-pause
+::pause
 goto MENU
 
 :CLEAN_FIVEM
@@ -68,7 +68,7 @@ for %%F in ("%FIVEM_CACHE%" "%FIVEM_SERVER_CACHE%" "%FIVEM_SERVER_CACHE_PRIV%" "
 echo.
 echo.                                            FiveM cache successfully cleaned!
 echo.
-pause
+::pause
 goto MENU
 
 :CLEAN_ALL
@@ -80,9 +80,10 @@ call :CLEAN_FIVEM
 echo.
 echo.                                            All folders successfully cleaned!
 echo.
-pause
+::pause
 goto MENU
 
+::redirect zum original discord
 :EXIT
 start https://discord.gg/QR4az8AcZP
 exit
